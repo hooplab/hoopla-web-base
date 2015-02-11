@@ -13,9 +13,9 @@ RUN apt-get update && \
 RUN apt-get -y update && \
     apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev && \
     cd /tmp && \
-    wget http://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p451.tar.gz && \
-    tar -xvzf ruby-2.0.0-p451.tar.gz && \
-    cd ruby-2.0.0-p451/ && \
+    wget http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz && \
+    tar -xvzf ruby-2.1.2.tar.gz && \
+    cd ruby-2.1.2/ && \
     ./configure --prefix=/usr/local && \
     make && \
     make install
