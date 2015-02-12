@@ -21,3 +21,8 @@ RUN apt-get -y update && \
     make install
 
 RUN gem install bundler
+
+RUN chmod u+w /etc/sudoers && \
+    echo "%jenkins ALL=(ALL:ALL) NOPASSWD:ALL" >> /etc/sudoers && \
+    chmod u-w /etc/sudoers && \
+    visudo --check
