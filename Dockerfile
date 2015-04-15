@@ -11,7 +11,7 @@ RUN apt-get update && \
 
 # Install ruby 2.1.2
 RUN apt-get -y update && \
-    apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev && \
+    apt-get -y install build-essential zlib1g-dev nodejs libssl-dev libreadline6-dev libyaml-dev && \
     cd /tmp && \
     wget http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz && \
     tar -xvzf ruby-2.1.2.tar.gz && \
